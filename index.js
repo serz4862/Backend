@@ -16,13 +16,13 @@ app
         return res.json(user);
     })
     .patch((req,res)=>{
-        
+    return res.json({status : "pending"})
+
     })
-app.get("/api/users/:id",(req,res)=>{
-    const id = Number(req.params.id);
-    const user = users.find((user)=> user.id ===id);
-    return res.json(user);
-});
+    .delete((req,res) =>{
+    return res.json({status : pending})
+
+    });
 
 
 app.listen(PORT, ()=>{
