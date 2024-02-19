@@ -15,7 +15,7 @@ app
         const user = users.find((user)=> user.id===id);
         return res.json(user);
     })
-    .patch((req,res)=>{
+    .post((req,res)=>{
     return res.json({status : "pending"})
 
     })
